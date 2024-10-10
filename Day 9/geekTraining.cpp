@@ -30,7 +30,7 @@ class Solution {
     int maximumPoints(vector<vector<int>>& arr, int n) {
         // Code here
         int nt = arr[0].size();
-        vector<vector <int>> dp(n, vector<int>(n+1, -1));
+        vector<vector <int>> dp(n, vector<int>(nt+1, -1));
         return recur(n-1, nt, n, nt, arr, dp);
     }
 };
